@@ -15,11 +15,11 @@ Usage:
     - **target/flatten-json-1.0-SNAPSHOT.jar**
 5. Use the command to run 
     
-  - **cat test-case-1.json| java -jar target/flatten-json-1.0-SNAPSHOT.jar**
+  - **cat test-case-1.json | java -jar target/flatten-json-1.0-SNAPSHOT.jar**
    
 Test Cases: 3 samples fiels are provided in the repo, run the program against them as:
 
-1. cat test-case-1.json| java -jar target/flatten-json-1.0-SNAPSHOT.jar
-2. cat test-case-2.json| java -jar target/flatten-json-1.0-SNAPSHOT.jar
-3. cat test-case-3.json| java -jar target/flatten-json-1.0-SNAPSHOT.jar
+1. cat test-case-1.json | java -jar target/flatten-json-1.0-SNAPSHOT.jar
+2. cat test-case-2.json | java -jar target/flatten-json-1.0-SNAPSHOT.jar
+3. cat test-case-3.json | java -jar target/flatten-json-1.0-SNAPSHOT.jar
     
