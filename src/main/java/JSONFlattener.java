@@ -1,4 +1,5 @@
 import lombok.Builder;
+import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
@@ -6,13 +7,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 /*
-    Created by SachinB
-
 * Reads and parsed the json string
 * Flattens json string in key-value format
 * Finally coverts the map into json string
 * */
 @Builder
+@Slf4j
 public class JSONFlattener {
     public static final String KEY_SEPARATOR=".";
     public String flattenJson(String json) {
@@ -20,7 +20,7 @@ public class JSONFlattener {
         try{
             jsonObject=readJson(json);
         }catch (ParseException parseException){
-            System.out.println("Invalid json: "+json);
+            log.error("Invalid json:[{}]",json,parseException.getMessage());
             System.exit(1);
         }
 
